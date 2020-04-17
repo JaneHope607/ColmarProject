@@ -142,6 +142,24 @@ main {
 }
 
 .right-side {
+    display: flex;
     max-width: 40%;
     height: auto;
+    flex-direction: column;
+}
+
+.right-side .item {
+    height: auto;
+    display: inline-flex;
+    border: 0.5rem solid black;
+}
+
+.right-side .item img {
+    max-width: 35%;
+    height: auto;
+    margin: 1rem 1rem;
+}
+
+.right-side .item .text {
+    jus
 }
