@@ -190,15 +190,67 @@ main {
 }
 
 .learning-flex-container {
-    display: inline-flex;
+    display: inline-flex;  
     max-width: 100%;
-    flex-wrap: wrap;
-    flex-direction: row;
     background-color: #d9d9d9;
-
+    flex-direction: column;
 }
 
-.learning-flex-container h2 {
+.learning-flex-container .title {
     margin: 2rem 0rem;
-    text-align: center
+    text-align: center;
+    width: 100%;
+}
+
+.course-block-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem 2rem;
+    max-width: 100%;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    background-color: #d9d9d9;
+}
+
+.course-block {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    max-height: auto;
+    text-align: left;
+}
+
+.course-block-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.course-block-image img 
+
+.thesis-exhibit-flex-container {
+    display: inline-flex;
+    background-color: white;
+    max-width: 100%;
+}
+
+.thesis-left-side {
+    max-width: 60%;
+    height: auto;
+    padding: 2rem 1.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thesis-left-side-title {
+    max-width: 100%;
+    text-align: center;
+}
+
+.thesis-left-side-video {
+    display: inline-flex;
+    height: auto;
+}
+
+.thesis-left-side video {
+    max-width: 100%;
 }
