@@ -4,10 +4,26 @@ html {
     background-color: white;
 }
 
-.nav-container {
+header {
     position: fixed;
+    display: flex;
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: pink;
+    height: 4rem;
+    background-color: #F5F5DC;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
 }
+
+header .logo {
+    height: 2rem;
+    margin-left: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
