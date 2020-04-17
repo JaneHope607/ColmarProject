@@ -110,14 +110,13 @@ main {
 
 .main-flex-container {
     display: inline-flex;
-    background-color: #f2f2f2;
-    max-width: 100%;
+    background-color: white;
 }
 
 .left-side {
-    margin: 2rem 1.5rem;
     max-width: 60%;
     height: auto;
+    padding: 2rem 1.5rem;
 }
 
 .left-side img {
@@ -153,7 +152,6 @@ main {
     display: inline-flex;
     align-items: center;
     height: auto;
-    border-bottom: 1px solid lightgrey;
 }
 
 .right-side-image {
@@ -183,3 +181,10 @@ main {
     font-weight: 500;
 }
 
+.right-side-item.orientation {
+    margin-top: 1rem;
+}
+
+.right-side-item.lecture {
+    background-color: #d9d9d9;
+}
