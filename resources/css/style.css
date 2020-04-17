@@ -1,7 +1,18 @@
-html {
+html, body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     background-color: white;
+    color: #4d4d4d;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-weight: 500;
 }
 
 header {
@@ -52,7 +63,7 @@ ul.nav-list {
 
 ul.nav-list li a {
     text-decoration: none;
-    color: #404040;
+    color: #4d4d4d;
     list-style: none;
     text-align: center;
     padding: 0.5rem;
@@ -61,8 +72,38 @@ ul.nav-list li a {
 main {
     position: relative;
     top: 4rem;
+    margin: 0;
+    padding: 0;
 }
 
 .banner-flex-container {
-    background-color: #696969;
+    background-color: #d9d9d9;
+    display: inline-flex;
+    max-width: 100%;
+}
+
+.banner-flex-container img {
+    margin: 2rem 1.5rem;
+    max-width: 60%;
+    height: auto;
+}
+
+.banner-flex-container .text {
+    max-width: 30%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: left;
+    margin: 1.5rem;
+    text-align: left;
+}
+
+.text .banner-button {
+    background-color: #4d4d4d;
+}
+
+.text .banner-button p {
+    text-decoration: none;
+    color: white;
+    justify-items: stretch;
 }
