@@ -142,24 +142,44 @@ main {
 }
 
 .right-side {
-    display: flex;
+    display: inline-flex;
     max-width: 40%;
     height: auto;
     flex-direction: column;
+    border-left: 1px solid lightgrey;
 }
 
-.right-side .item {
-    height: auto;
+.right-side-item {
     display: inline-flex;
-    border: 0.5rem solid black;
+    align-items: center;
+    height: auto;
+    border-bottom: 1px solid lightgrey;
 }
 
-.right-side .item img {
+.right-side-image {
     max-width: 35%;
     height: auto;
     margin: 1rem 1rem;
 }
 
-.right-side .item .text {
-    jus
+.right-side-image img {
+    max-width: 100%;
 }
+
+.right-side-text {
+    max-width: 65%;
+    width: auto;
+    margin: auto 0;
+}
+
+.right-side-text h2
+.right-side-text p {
+    padding: 0px 0px 8px 0px;
+}
+
+.right-side-text a {
+    text-decoration: none;
+    color: #6666ff;
+    font-weight: 500;
+}
+
