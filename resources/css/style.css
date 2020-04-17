@@ -11,7 +11,7 @@ header {
     left: 0px;
     width: 100%;
     height: 4rem;
-    background-color: #F5F5DC;
+    background-color: white;
     z-index: 5;
     margin: 0;
     padding: 0;
@@ -19,11 +19,50 @@ header {
 
 header .logo {
     height: 2rem;
+    width: auto;
     margin-left: 1.5rem;
     justify-content: flex-start;
-    align-items: center;
+    align-self: center;
 }
 
+header span {
+    font-size: 1.5rem;
+    align-self: center;
+    color: #696969;
+}
 
+header span .colmar {
+    color: #404040;
+    font-weight: 550;
+}
 
+nav {
+    justify-content: flex-end;
+    width: 100%;
+    align-self: center;
+}
 
+ul.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+
+ul.nav-list li a {
+    text-decoration: none;
+    color: #404040;
+    list-style: none;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+.banner-flex-container {
+    background-color: #696969;
+}
