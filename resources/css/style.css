@@ -1,5 +1,5 @@
 html, body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     background-color: white;
     color: #4d4d4d;
@@ -71,18 +71,24 @@ ul.nav-list li a {
     color: #4d4d4d;
     list-style: none;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
+    font-weight: 600;
+    transition-property: color;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in;
+}
+
+ul.nav-list li a:hover {
+    color: red;
 }
 
 main {
     position: relative;
     top: 4rem;
-    margin: 0;
-    padding: 0;
 }
 
 .banner-flex-container {
-    background-color: #d9d9d9;
+    background-color:  #ffd11a;
     display: inline-flex;
     max-width: 100%;
 }
@@ -91,6 +97,7 @@ main {
     margin: 2rem 1.5rem;
     max-width: 60%;
     height: auto;
+    box-shadow: 0px 5px 15px hsla(210, 6%, 42%, 0.73);
 }
 
 .banner-flex-container .text {
@@ -103,12 +110,19 @@ main {
     text-align: left;
 }
 
-.text .banner-button {
+.banner-button {
     background-color: #4d4d4d;
-    justify-self: stretch;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-radius: 15px
 }
 
-.text .banner-button p {
+.banner-button a {
+    text-decoration: none;
+}
+
+.banner-button p {
     text-decoration: none;
     color: white;
 }
@@ -197,14 +211,13 @@ main {
 .learning-flex-container {
     display: inline-flex;  
     max-width: 100%;
-    background-color: #d9d9d9;
+    background-color: #ffd11a;
     flex-direction: column;
 }
 
-.learning-flex-container .title {
-    margin: 2rem 0rem;
+.learning-flex-container h2 {
+    margin: 2rem 0;
     text-align: center;
-    width: 100%;
 }
 
 .course-block-container {
@@ -215,7 +228,7 @@ main {
     margin-left: 4.5rem;
     margin-right: 4.5rem;
     margin-bottom: 4.5rem;
-    background-color: #d9d9d9;
+    background-color: #ffd11a;
 }
 
 .course-block {
@@ -224,6 +237,7 @@ main {
     background-color: white;
     max-height: auto;
     text-align: left;
+    box-shadow: 5px 5px 15px hsla(210, 6%, 42%, 0.73);
 }
 
 .course-block-image img {
@@ -236,42 +250,115 @@ main {
     margin: 0rem 1rem;
 }
 
-.thesis-exhibit-flex-container {
+.thesis {
     display: inline-flex;
     flex-direction: column;
     background-color: white;
+}
+
+.thesis h2 {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.thesis-container {
+    display: inline-flex;
+    flex-direction: row;
     max-width: 100%;
+    margin: 0;
+    padding: 0; 
 }
 
 .thesis-left-side {
     display: inline-flex;
     flex-direction: column;
     max-width: 60%;
-    padding: 2rem 1.5rem;
-}
-
-.thesis-left-side-title {
-    max-width: 100%;
-    text-align: center;
-}
-
-.thesis-left-side-video {
-    display: inline-flex;
     height: auto;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 .thesis-left-side video {
     max-width: 100%;
+    height: auto;
+}
+
+.thesis-left-side-text {
+    text-align: justify;
+}
+
+.thesis-left-side h3 {
+    margin-bottom: .5rem;
+    margin-top: 1.5rem;
+}
+
+.thesis-left-side p {
+    margin-bottom: 2rem;
 }
 
 .thesis-right-side {
     display: inline-flex;
+    flex-direction: column;
     max-width: 40%;
     height: auto;
-    flex-direction: column;
+    margin-right: 1.5rem;
 }
 
 .thesis-right-side-item {
+    max-width: 100%;
     height: auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.thesis-right-side-image {
+    max-width: 35%;
+    height: auto;
+    margin: 1rem 1rem;
+}
+
+.thesis-right-side-image img {
+    max-width: 100%;
+}
+
+.thesis-right-side-text {
+    max-width: 65%;
+    height: auto;
+    text-align: left;
+}
+
+.thesis-right-side-text h3
+.thesis-right-side-text p {
+    padding: 0px 0px 8px 0px;
+}
+
+.thesis-right-side-item.fisma {
+    background-color: #d9d9d9;
+}
+
+footer {
+    display: inline-flex;
     width: 100%;
+    position: relative;
+    top: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #C5CAD7;
+}
+
+footer p {
+    margin-left: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+footer li {
+    display: inline-flex;
+    margin-right: 1rem;
 }
