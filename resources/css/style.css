@@ -20,6 +20,8 @@ h2 {
     font-size: 2rem;
 }
 
+/*Header*/
+
 header {
     position: fixed;
     display: flex;
@@ -64,28 +66,54 @@ ul.nav-list {
     list-style: none;
     text-align: center;
     margin-right: 1.5rem;
+    background-color: white;
 }
 
 ul.nav-list li a {
     text-decoration: none;
+    font-size: 1rem;
     color: #4d4d4d;
     list-style: none;
     text-align: center;
     padding: 1rem;
     font-weight: 600;
-    transition-property: color;
-    transition-duration: 600ms;
-    transition-timing-function: ease-in;
+    border-radius: 35px;
+    transition: all 300ms ease-out;
 }
 
+
 ul.nav-list li a:hover {
-    color: red;
+    color: whitesmoke;
+    background-color: darkslategrey;
 }
+
+.mobile-nav {
+    display: none;
+}
+
+/*Header - Mobile*/
+
+@media only screen and (max-width: 768px) {
+    header span, nav, header .logo {
+    display: none;
+}
+
+.mobile-nav {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: scale(1.1);
+}
+}
+
+/*Main*/
 
 main {
     position: relative;
     top: 4rem;
 }
+
+/*Banner*/
 
 .banner-flex-container {
     background-color:  #ffd11a;
@@ -115,7 +143,13 @@ main {
     text-align: center;
     width: 100%;
     height: auto;
-    border-radius: 15px
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.banner-button:hover {
+    transform: scale(1.1);
+    background-color: white;
 }
 
 .banner-button a {
@@ -125,6 +159,44 @@ main {
 .banner-button p {
     text-decoration: none;
     color: white;
+    transition: all 0.5s ease;
+}
+
+.banner-button p:hover {
+    color: darkslateblue;
+    font-weight: 700;
+}
+
+
+/*Banner-mobile*/ 
+
+@media only screen and (max-width: 768px) {
+    .banner-flex-container {
+        flex-direction: column;
+    }
+    .banner-flex-container img {
+        max-width: 100%;
+        margin: 0rem .5rem;
+    }
+
+    .banner-flex-container .text {
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    
+    .text h1, h3 {
+        border: 5px solid gray; 
+    }
+
+    .banner-button {
+        width: 50%;
+    }
 }
 
 .main-flex-container {
@@ -171,6 +243,12 @@ main {
     align-items: center;
     height: auto;
     margin-right: 1.5rem;
+    transition: all 500ms ease-in
+}
+
+.right-side-item:hover {
+    background-color: #F7CE3E;
+    padding: 1rem 0 1rem 0;
 }
 
 .right-side-image {
@@ -208,6 +286,18 @@ main {
     background-color: #d9d9d9;
 }
 
+/*Main-mobile*/ 
+
+@media only screen and (max-width: 768px) {
+.left-side {
+        display: none;
+}
+
+.right-side {
+   max-width: 100%;
+}
+}
+
 .learning-flex-container {
     display: inline-flex;  
     max-width: 100%;
@@ -238,6 +328,12 @@ main {
     max-height: auto;
     text-align: left;
     box-shadow: 5px 5px 15px hsla(210, 6%, 42%, 0.73);
+    transition: all 500ms ease-in-out;
+}
+
+.course-block:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px hsla(210, 6%, 42%, 0.73);
 }
 
 .course-block-image img {
