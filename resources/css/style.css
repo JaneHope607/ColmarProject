@@ -176,7 +176,7 @@ main {
     }
     .banner-flex-container img {
         max-width: 100%;
-        margin: 0rem .5rem;
+        margin: .5rem .5rem;
     }
 
     .banner-flex-container .text {
@@ -189,15 +189,12 @@ main {
         padding-bottom: 2rem;
     }
 
-    
-    .text h1, h3 {
-        border: 5px solid gray; 
-    }
-
     .banner-button {
         width: 50%;
     }
 }
+
+/*Main*/ 
 
 .main-flex-container {
     display: inline-flex;
@@ -252,7 +249,7 @@ main {
 }
 
 .right-side-image {
-    max-width: 35%;
+    max-width: 25%;
     height: auto;
     margin: 1rem 1rem;
 }
@@ -286,17 +283,63 @@ main {
     background-color: #d9d9d9;
 }
 
+.right-side-mobile {
+    display: none;
+}
+
 /*Main-mobile*/ 
 
 @media only screen and (max-width: 768px) {
 .left-side {
-        display: none;
+    display: none;
+}
+.right-side {
+    display: none;
 }
 
-.right-side {
-   max-width: 100%;
+.right-side-mobile {
+    max-width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.right-side-item-mobile {
+    display: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem;
+    border: 5px solid gray;
+}
+
+.right-side-image-mobile {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-side-image-mobile img {
+    max-width: 100%;
+}
+
+.right-side-text-mobile {
+    max-width: 100%;
+    width: auto;
+    text-align: center;
+}
+
+.right-side-text-mobile h3
+.right-side-text-mobile p {
+    padding: 0px 0px 8px 0px;
+}
+
+.right-side-text-mobile a {
+    text-decoration: none;
+    color: #6666ff;
+    font-weight: 500;
 }
 }
+
+/*Courses*/ 
 
 .learning-flex-container {
     display: inline-flex;  
@@ -345,6 +388,22 @@ main {
     text-align: justify;
     margin: 0rem 1rem;
 }
+
+/*Course-mobile*/ 
+
+@media only screen and (max-width: 768px) {
+.course-block-image,
+.course-block p {
+    display: none;
+}
+
+.course-block-container {
+    grid-template-columns: repeat(1,1fr);
+    display: column;
+}
+}
+
+/*thesis-section*/ 
 
 .thesis {
     display: inline-flex;
@@ -431,6 +490,27 @@ main {
 
 .thesis-right-side-item.fisma {
     background-color: #d9d9d9;
+}
+
+/*Thesis-mobile*/ 
+
+@media only screen and (max-width: 768px) {
+.thesis-left-side-text,
+.thesis-right-side {
+        display: none;
+}
+
+.thesis-left-side {
+    max-width: 100%;
+    height: auto;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.thesis-left-side video {
+    max-width: 100%;
+    height: auto;
+}
 }
 
 footer {
